@@ -1,0 +1,3 @@
+
+// DECLARANDO O CALCULATOR EM WINDOW, VIRA GLOBAL E PODE ACESSAR NO CONSOLE
+window.calculator = new CalcController;

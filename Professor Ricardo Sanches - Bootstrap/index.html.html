@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="_css/style%20-%20modificacoes.css">
+      
+    <!-- Arquivo de ícones -->
+    <link rel="stylesheet" href="_icones/font/css/open-iconic-bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Bootstrap training</title>
+  </head>
+  <body>
+    
+      <!-- Menu NAVBAR -->
+      <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-primary">
+    
+        <div class="container">
+            <a class="navbar-brand h1 mb-0" href="#">Curso</a>
+
+            <button class="navbar-toggler" type="button"
+     data-toggle="collapse" data-target="#navbarSite">
+                <span class="navbar-toggler-icon"></span>
+            </button>    
+
+            <div class="collapse navbar-collapse" id="navbarSite">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contatos</a>
+                    </li>
+                </ul>
+                
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Social</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Facebook</a>
+                            <a class="dropdown-item" href="#">Twitter</a>
+                            <a class="dropdown-item" href="#">Instagram</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Formulário de busca -->
+                <form class="form-inline">
+                    <input class="form-control ml-4 mr-2" type="search" placeholder="Buscar...">
+                    <button class="btn btn-dark" type="Submit">Ok</button>
+                </form>
+            </div> <!-- Fim de .collapse .navbar-collapse -->
+        </div> <!-- Fim de .container do navbar -->
+    </nav>
+      
+    <!-- CAROUSEL -->  
+    <div id="carouselSite" class="carousel slide bg-dark" data-ride="carousel">
+        
+        <!-- Lista para mostrar os indicadores -->
+        <ol class="carousel-indicators">
+            <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselSite" data-slide-to="1"></li>
+            <li data-target="#carouselSite" data-slide-to="2"></li>
+        </ol>
+        
+        <!-- Imagens -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="_img/lua1.jpg" class="img-fluid d-block imagemCarousel">
+                <!-- Legenda da imagem 1 -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Título para a imagem 1</h1>
+                    <p class="lead">Texto qualquer para mostrar como ficou a descrição das imagens</p>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <img src="_img/lua4.jpg" class="img-fluid d-block imagemCarousel">
+                <!-- Legenda da imagem 2 -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Título para a imagem 2</h1>
+                    <p class="lead">Texto qualquer para mostrar como ficou a descrição das imagens</p>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <img src="_img/lua3.jpg" class="img-fluid d-block imagemCarousel">
+                <!-- Legenda da imagem 3 -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Título para a imagem 3</h1>
+                    <p class="lead">Texto qualquer para mostrar como ficou a descrição das imagens</p>
+                </div>
+            </div>
+        </div> <!-- Fim de .carousel-inner -->
+        
+        <!-- Link para o controle de voltar -->
+        <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        
+        
+        <!-- Link para o controle de avançar -->
+        <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Avançar</span>
+        </a>    
+    </div> <!-- Fim de .carousel slide bg-dark -->
+      
+      
+    <div class="container bg-light ">
+        
+        <!-- Título do corpo do site -->
+        <div class="row">
+            
+            <div class="col-12 text-center my-5">
+                <h1 class="display-3"><span class="oi oi-arrow-circle-right text-primary"></span>Seja bem vindo</h1>
+                <p>Texto inventado só para preencher o espaço deste exemplo</p>
+            </div>
+        </div> <!-- Fim do primeiro .row -->
+        
+        <!-- Menu lateral do SCROLLSPY -->
+        <div class="row mb-5">
+            <div class="col-sm-6 col-md-4 mb-3">
+                <nav id="navbarVertical" class="navbar navbar-light bg-light">
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link" href="#item1">ITEM 1</a>
+                        
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ml-3" href="#item1-1">ITEM 1-1</a>
+                            <a class="nav-link ml-3" href="#item1-2">ITEM 1-2</a>
+                        </nav>
+                                            
+                        <a class="nav-link" href="#item2">ITEM 2</a>
+                        
+                        <a class="nav-link" href="#item3">ITEM 3</a>
+                        
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ml-3" href="#item3-1">ITEM 3-1</a>
+                            <a class="nav-link ml-3" href="#item3-2">ITEM 3-2</a>
+                        </nav>
+                    </nav> <!-- Fim de .nav nav-pills flex-column -->
+                </nav> <!-- Fim de .navbar navbar-light bg-light -->
+            </div> <!-- Fim de .col-3 -->
+                
+            <!-- Texto com barra de rolagem do SCROLLSPY -->
+            <div class="col-sm-6 col-md-8">
+                <div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollspySite">
+                    <h4 id="item1">Texto 1</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    
+                    <h5 id="item1-1">Texto 1-1</h5>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
+                    
+                    <h5 id="item1-2">Texto 1-2</h5>
+                    <p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </p>
+                    
+                    <h4 id="item2">Texto 2</h4>
+                    <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                    
+                    <h4 id="item3">Texto 3</h4>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                    
+                    <h5 id="item3-1">Texto 3-1</h5>
+                    <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. </p>
+                    
+                    <h5 id="item3-2">Texto 3-2</h5>
+                    <p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                </div> <!-- Fim de .scrollspySite -->
+            </div> <!-- Fim de .col-9 -->
+        </div> <!-- Fim do segundo .row -->
+        
+        <!-- Componente CARD -->
+        <div class="row justify-content-sm-center">
+            
+            <!-- Primeiro card ocupando 4 colunas do grid -->
+            <div class="col-sm-6 col-md-4">
+                <div class="card mb-5">
+                    <!-- Imagem no cabeçalho do card -->
+                    <img class="card-img-top" src="_img/lua2.jpg">
+                    
+                    <!-- Corpo do card com título e subtítulo -->
+                    <div class="card-body">
+                        <h4 class="card-title">Título 1</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Subtítulo do primeiro cartão</h6>
+                        <p class="card-text">The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc</p>
+                    </div>
+                    
+                    <!-- Lista dentro do card -->
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Link1</li>
+                        <li class="list-group-item">Link2</li>
+                        <li class="list-group-item">Link3</li>
+                    </ul>
+                    
+                    <!-- Links dentro do card -->
+                    <div class="card-body">
+                        <a href="#" class="card-link">Donec</a>
+                        <a href="#" class="card-link">Lorem Ipsum</a>
+                    </div>
+                    
+                    <!-- Rodapé do card -->
+                    <div class="card-footer text-muted">
+                        Texto do rodapé
+                    </div>
+                </div> <!-- Fim de .card -->
+            </div> <!-- Fim de .col-sm-4 -->
+            
+            <!-- Primeiro card ocupando 4 colunas do grid -->
+            <div class="col-sm-6 col-md-4">
+                <div class="card mb-5">
+                    <!-- Imagem no cabeçalho do card -->
+                    <img class="card-img-top" src="_img/lua2.jpg">
+                    
+                    <!-- Corpo do card com título e subtítulo -->
+                    <div class="card-body">
+                        <h4 class="card-title">Título 1</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Subtítulo do primeiro cartão</h6>
+                        <p class="card-text">The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc</p>
+                    </div>
+                    
+                    <!-- Lista dentro do card -->
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Link1</li>
+                        <li class="list-group-item">Link2</li>
+                        <li class="list-group-item">Link3</li>
+                    </ul>
+                    
+                    <!-- Links dentro do card -->
+                    <div class="card-body">
+                        <a href="#" class="card-link">Donec</a>
+                        <a href="#" class="card-link">Lorem Ipsum</a>
+                    </div>
+                    
+                    <!-- Rodapé do card -->
+                    <div class="card-footer text-muted">
+                        Texto do rodapé
+                    </div>
+                </div> <!-- Fim de .card -->
+            </div> <!-- Fim de .col-sm-4 -->
+            
+            <!-- Primeiro card ocupando 4 colunas do grid -->
+            <div class="col-sm-6 col-md-4">
+                <div class="card mb-5">
+                    <!-- Imagem no cabeçalho do card -->
+                    <img class="card-img-top" src="_img/lua2.jpg">
+                    
+                    <!-- Corpo do card com título e subtítulo -->
+                    <div class="card-body">
+                        <h4 class="card-title">Título 1</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Subtítulo do primeiro cartão</h6>
+                        <p class="card-text">The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc</p>
+                    </div>
+                    
+                    <!-- Lista dentro do card -->
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Link1</li>
+                        <li class="list-group-item">Link2</li>
+                        <li class="list-group-item">Link3</li>
+                    </ul>
+                    
+                    <!-- Links dentro do card -->
+                    <div class="card-body">
+                        <!-- Link que abre o MODAL -->
+                        <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">Donec</a>
+                        <a href="#" class="card-link">Lorem Ipsum</a>
+                    </div>
+                    
+                    <!-- Rodapé do card -->
+                    <div class="card-footer text-muted">
+                        Texto do rodapé
+                    </div>
+                </div> <!-- Fim de .card -->
+            </div> <!-- Fim de .col-sm-4 -->
+        </div> <!-- Fim de .row mb-5 -->
+        
+        <!-- Jumbotron criado dentro de um container ocupa no máximo a largura do elemento pai -->
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <h1 class="text-center">Teste</h1>
+                </div>
+            </div>
+        </div>
+        
+    </div> <!-- Fim de .container -->
+      
+    <!-- Jumbotron criado fora do container pode ser fluido -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <!-- Cabeçalho do jumbotron -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4"><span class="oi oi-video text-primary"></span>Jumbotron-fluid fora do container</h1>
+                    <!-- A classe lead dá destaque ao texto -->
+                    <p class="lead">Testo para testar um subtítulo dentro do jumbotron fluid</p>
+                    <hr>
+                </div>
+            </div> <!-- Fim de .row do cabeçalho do jumbotron -->
+            
+            <!-- Nav pills dentro do jumbotron -->
+            <div class="row">
+                <div class="col-12">
+                    
+                    <!-- Lista com os links para os nav-items -->
+                    <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
+                        <li class="nav-item">
+                            <!-- Link para o nav-item-01 -->
+                            <a class="nav-link active" id="nav-pills-01" data-toggle="pill" href="#nav-item-01">Nav pill link 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Link para o nav-item-02 -->
+                            <a class="nav-link" id="nav-pills-02" data-toggle="pill" href="#nav-item-02">Nav pill link 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Link para o nav-item-03 -->
+                            <a class="nav-link" id="nav-pills-03" data-toggle="pill" href="#nav-item-03">Nav pill link 3</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Nav-items -->
+                    <div class="tab-content" id="nav-pills-content">
+                        <!-- Nav-item-01 -->
+                        <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+                            <div class="row mb-2">
+                                <div class="col-sm-6">
+                                    <div class="embed-responsive embed-responsive-4by3">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MeWjI1mOfyo">
+                                        </iframe>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p>Texte descritivo do vídeo. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc</p>
+                                </div>
+                            </div> <!-- Fim de .row mb-2 -->
+                        </div> <!-- Fim de .tab-pane fade show active -->
+                        
+                        <!-- Nav-item-02 -->
+                        <div class="tab-pane fade" id="nav-item-02" role="tabpanel">
+                            <div class="row mb-2">
+                                <div class="col-sm-6">
+                                    <div class="embed-responsive embed-responsive-4by3">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MeWjI1mOfyo">
+                                        </iframe>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p>Texte descritivo do vídeo. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc</p>
+                                </div>
+                            </div> <!-- Fim de .row mb-2 -->
+                        </div> <!-- Fim de .tab-pane fade -->
+                        
+                        <!-- Nav-item-03 -->
+                        <div class="tab-pane fade" id="nav-item-03" role="tabpanel">
+                            <div class="row mb-2">
+                                <div class="col-sm-6">
+                                    <div class="embed-responsive embed-responsive-4by3">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MeWjI1mOfyo">
+                                        </iframe>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p>Texte descritivo do vídeo. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc</p>
+                                </div>
+                            </div> <!-- Fim de .row mb-2 -->
+                        </div> <!-- Fim de .tab-pane fade -->
+                    </div> <!-- Fim de .tab-centent -->
+                    
+                </div> <!-- Fim de .col-12 -->
+            </div> <!-- Fim de .row do nav-pills -->
+            
+        </div>  <!-- Fim de .container -->
+    </div> <!-- Fim de .jumbotron jumbotron-fluid --> 
+      
+    <!-- FORMULÁRIO -->  
+    <div class="container">
+        
+        <!-- Título com um ícone --> 
+        <div class="row">
+            <div class="col-12 text-center my-5">
+                <h1 class="display-4"><span class="oi oi-collapse-right text-primary"></span>FORMULÁRIO</h1>
+            </div>
+        </div>  
+        
+        <!-- Início do formulário --> 
+        <div class="row  justify-content-center mb-5">
+            <div class="col-sm-12 col-md-10 col-lg-8">
+                
+                <!-- Primeira linha --> 
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <label for="inputNome">Seu nome</label>
+                        <input type="text" class="form-control" id="inputNome" placeholder="Nome"> 
+                    </div> 
+                    
+                    <div class="form-group col-sm-6">
+                        <label for="inputSobrenome">Seu sobrenome</label>
+                        <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+                    </div>
+                </div>    
+                
+                <!-- Segunda linha --> 
+                <div class="form-row">   
+                    <div class="form-group col-sm-12">
+                        <label for="inputEnd">Seu endereço</label>
+                        <input type="text" class="form-control" id="inputEnd" placeholder="Endereço completo">
+                    </div>
+                </div>
+                
+                <!-- Terceira linha --> 
+                <div class="form-row">    
+                    <div class="form-group col-sm-6">
+                        <label for="inputCidade">Sua cidade</label>
+                        <input type="text" class="form-control" id="inputCidade" placeholder="Cidade">
+                    </div>
+                    
+                    <div class="form-group col-sm-4">
+                        <label for="inputEstado">Seu estado</label>
+                        <select id="inputEstado" class="form-control">
+                            <option selected>Escolha...</option>
+                            <option>...</option>
+                            <option>...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group col-sm-2">
+                        <label for="inputCEP">Seu CEP</label>
+                        <input type="text" id="inputCEP" class="form-control">
+                    </div>
+                </div>
+                
+                <!-- Quarta linha - checkbox --> 
+                <div class="form-row">
+                    <div class="form-group">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox">Desejo receber novidades por e-mail
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quinta linha - botão de submeter --> 
+                <div class="form-row">
+                    <div class="col-sm-12">
+                        
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        
+                        <!-- POPOVER acionado pelo script final -->
+                        <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="popover" data-placement="right" data-trigger="focus" title="Texto de ajuda" data-content="Texto de ajuda para preencher o formulário">Ajuda</a> 
+                        
+                    </div>
+                </div>        
+            </div> <!-- Fim de .col-sm-12 col-md-10 col-lg-8 -->
+        </div> <!-- Fim de .row  justify-content-center mb-5 -->
+        
+        <!-- RODAPÉ: List group, button group e blockquote -->
+        <div class="row">
+            <div class="col-12"><hr></div>
+            
+            <div class="col-sm-4 mb-3">
+                <h3>Curso</h3>
+                <p>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc</p>
+                <p>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc</p>
+            </div>
+            
+            <div class="col-sm-4">
+                <h3>Menu</h3>
+                
+                <div class="list-group text-center">
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Perfil</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Serviços</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Depoimentos</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Contatos</a>
+                    
+                </div>
+            </div>
+            
+            <!-- Button-group com links para redes sociais -->
+            <div class="col-sm-4">
+                <h3>Social</h3>
+                <div class="btn-group-vertical btn-block btn-group-lg" role="group">
+                    <a class="btn btn-outline-primary" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a>
+                    <a class="btn btn-outline-info" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a>
+                    <a class="btn btn-outline-warning" href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+                </div>
+            </div>
+            
+            <!-- Blockquote com mensagem final -->
+            <div class="col-12 mt-5">
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">"O sucesso não é garantido, mas o fracasso é certo se você não estiver emocionalmente envolvido em seu trabalho."</p>
+                    <footer class="blockquote-footer">Biz Stone <cite title="Título">Fundador do Twitter</cite></footer>
+                </blockquote>
+            </div>
+        </div> <!-- Fim de .row -->
+        
+        
+    </div> <!-- Fim de .container -->
+      
+      
+      
+    <!-- MODAL -->
+    <div class="modal" id="siteModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <!-- Cabeçalho do modal com título e X para fechar -->
+                <div class="modal-header"> 
+                    <h5 class="modal-title">Título do modal</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <!-- Corpo do modal com duas colunas -->
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <!-- Div row para separar as colunas -->
+                        <div class="row">
+                            <!-- Coluna 1 -->
+                            <div class="col-6">
+                                <h5>Título primeira coluna</h5>
+                                <p>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc</p>
+                            </div>
+                            <!-- Coluna 2 -->
+                            <div class="col-6">
+                                <h5>Título segunda coluna</h5>
+                                <p>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc</p>
+                                <img id="imagemModal" src="_img/20160313_180102.jpg" alt="Imagem da segunda coluna" >
+                            </div>
+                        </div> <!-- Fim de .row -->
+                    </div> <!-- Fim de .container-fluid -->
+                </div> <!-- Fim de .modal-body -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+            </div> <!-- Fim de .modal-content -->
+        </div> <!-- Fim de .modal-dialog modal-lg -->
+    </div> <!-- Fim de .modal -->
+    
+        
+        
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })  
+    </script>
+      
+  </body>
+</html>

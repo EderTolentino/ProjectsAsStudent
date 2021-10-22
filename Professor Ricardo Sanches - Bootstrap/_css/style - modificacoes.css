@@ -1,0 +1,25 @@
+.scrollspySite {
+    position: relative;
+    overflow: auto;
+    height: 380px;
+}
+
+#imagemModal {
+    max-width: 100%;
+}
+
+.imagemCarousel {
+    max-width: 100%;
+}
+
+.carousel-item {
+    background-color: white;
+}
+
+.carousel-item img {
+    margin: auto;
+}
+
+.carousel-item h1, .carousel-item p {
+    color: white;
+}

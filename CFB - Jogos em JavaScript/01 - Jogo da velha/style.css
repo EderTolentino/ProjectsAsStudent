@@ -1,0 +1,112 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    width: 50%;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+#container {
+    width: 50%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: white;
+}
+
+#dvmenu {
+    width: 100%;
+    text-align: center;
+}
+
+#dvQuemComeca {
+    margin: 10px auto 5px auto;
+}
+
+#dvmenu button {
+    margin: 5px auto 15px auto;
+    border-radius: 5px;
+}
+
+#container_jogo {
+    width: 100%;
+}
+
+#dvjogo{
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 20px auto;
+}
+
+.posJogo{
+    width:  50px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    display: flex;     
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+#p1{
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+#p2{
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+#p3{
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+#p4{
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+#p5{
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+#p6{
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+#p7{
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+
+}
+
+#p8{
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+#p9{
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+}
